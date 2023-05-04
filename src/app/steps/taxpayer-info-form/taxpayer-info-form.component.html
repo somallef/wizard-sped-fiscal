@@ -1,0 +1,44 @@
+<form [formGroup]="formGroup">
+
+    <po-switch 
+        class="po-sm-12 po-md-12 po-lg-12"
+        p-label="Aglutinar por CNPJ + IE"
+        p-label-off="Não"        
+        p-label-on="Sim"
+        formControlName="aglutinarCNPJ">
+    </po-switch>
+
+    <po-select
+        class="po-sm-6 po-md-6 po-lg-6"
+        p-label="Perfil de apresentação"
+        [p-options]="perfilApresentacaoOptions"        
+        formControlName="perfilApresentacao">
+    </po-select>
+
+    <po-select
+        class="po-sm-6 po-md-6 po-lg-6"
+        p-label="Perfil de apresentação"
+        [p-options]="tipoAtividadeOptions"        
+        formControlName="tipoAtividade">
+    </po-select>
+
+    <po-select 
+        class="po-sm-6 po-md-6 po-lg-6"
+        p-label="Perfil de apresentação"
+        [p-options]="classeAtividadeOptions"        
+        formControlName="classeAtividade">
+    </po-select>
+
+    <po-email 
+        formControlName="emailContribuinte"
+        p-label="E-mail" 
+        class="po-sm-6 po-md-6 po-lg-6">    
+    </po-email>
+
+    <po-input 
+        formControlName="codigoFinalidadeArquivo"
+        class="po-sm-6 po-md-6 po-lg-6" 
+        p-label="Código da finalidade do arquivo"> 
+    </po-input>
+
+</form>

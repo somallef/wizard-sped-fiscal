@@ -1,0 +1,92 @@
+<form [formGroup]="formGroup">
+
+    <po-divider p-label="identificação" p-border-width="medium"></po-divider>
+    <div class="po-row">
+        <po-input 
+            formControlName="nome"
+            class="po-sm-12 po-md-12 po-lg-12"
+            p-label="Nome"> 
+        </po-input>
+
+        <po-input 
+            formControlName="cnpj"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="CNPJ"> 
+        </po-input>
+
+        <po-input 
+            formControlName="cpf"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="CPF"> 
+        </po-input>
+
+        <po-input 
+            formControlName="crc"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="CRC"> 
+        </po-input>
+    </div>
+
+    <po-divider p-label="contato" p-border-width="medium"></po-divider>
+    <div class="po-row">
+        <po-email 
+            formControlName="email"
+            p-label="E-mail" 
+            class="po-sm-6 po-md-6 po-lg-6">    
+        </po-email>
+
+        <po-input 
+            formControlName="telefone"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="Telefone"> 
+        </po-input>
+
+        <po-input 
+            formControlName="fax"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="FAX"> 
+        </po-input>
+    </div>
+
+    <po-divider p-label="endereço" p-border-width="medium"></po-divider>
+    <div class="po-row">
+        <po-input 
+            formControlName="endereco"
+            class="po-sm-10 po-md-10 po-lg-10"
+            p-label="Endereço"> 
+        </po-input>
+
+        <po-input 
+            formControlName="numero"
+            class="po-sm-2 po-md-2 po-lg-2"
+            p-label="Número"> 
+        </po-input>
+
+        <po-input 
+            formControlName="complemento"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="Complemento"> 
+        </po-input>
+
+        <po-input 
+            formControlName="bairro"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="Bairro"> 
+        </po-input>
+
+        <po-input 
+            formControlName="cep"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="CEP"> 
+        </po-input>
+
+        <po-input 
+            formControlName="codMunicipio"
+            class="po-sm-6 po-md-6 po-lg-6"
+            p-label="Cód. município IBGE"> 
+        </po-input>
+
+        
+    </div>
+
+</form>
